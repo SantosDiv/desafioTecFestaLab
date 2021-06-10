@@ -1,12 +1,12 @@
-# Desafio FestaLab 🥳
+# Desafio Técnico FestaLab 🎉
 ## Proposta do desafio
-Desenvolver um método (ou função) que receba que como entrada uma lista de bugs e retornar o id daqueles que devem ser resolvidos hoje.
+Desenvolver um método (ou função) que receba que como entrada uma lista de bugs e retornar o 'id' daqueles que devem ser resolvidos hoje.
 
 ## Resolução aplicada
-Para a resolução do desafio, fiz uso da linguagem `javascript`, com a Higher-order function (HOF) chamada: `reduce`.
+Para a resolução do desafio, usei a linguagem `javascript`. Como ferramenta, utilizei a Higher-order function (HOF) chamada: `reduce`. Esta HOF me ajudou a 'reduzir' o array de objetos para um array contendo apenas os 'ids' dos bugs.
 
-### Estrutura de entrada (exemplo)
-Como estrutura de entrada, escolhi por um array de objetos, tendo em vista que cada bug precisa ter três informações distintas. Assim, o objeto me auxilia a guardar essas informações de forma mais dinâmica.
+### Estrutura de entrada (dados fictícios)
+Como estrutura de entrada, escolhi por um array de objetos, tendo em vista que cada bug precisa ter três informações distintas. Assim, o objeto me auxilia a guardar essas informações de forma dinâmica.
 
 ```js
 // Tipo de dados de entrada
@@ -52,13 +52,13 @@ Para fazer a chamada da função, passa-se o array gerado anteriormente como par
 const bugsFixToday = listBugIdsToFixToday(bugsList);
 
 // Saída esperada de dados
-console.log(bugsFixToday); // array -> [1, 3]
+console.log(bugsFixToday); // array com os ids dos bugs -> [1, 3]
 ```
-A resposta da fução está sendo guardada em uma variável apenas como uma sugestão de um uso futuro para trabalhar esses dados.
+A resposta da função está sendo guardada em uma variável apenas como uma sugestão de um uso futuro, para trabalhar esses dados.
 
 ## Sugestões de melhorias no código
-Como sugestão de melhoria, pode-se mudar a forma de determinar um bug `crítico` ou `normal`. Ao invés de utilizar as palavras, que é passível de futuros erros, pode-se fazer uso de um numeral para cada bug. Caso crítico seria o numeral `5` caso normal o numeral `1` (por exemplo). Aplicado a uma nova chave chamada `nivelDoBug`.
+Como sugestão de melhoria, pode-se mudar a forma de determinar um bug `crítico` ou `normal`. Ao invés de utilizar as palavras, sendo passível de futuros erros, pode-se usar um numeral para cada bug. Caso crítico seria o numeral `5` caso normal o numeral `1` (por exemplo). Aplicado a uma nova chave chamada `nivelDoBug`.
 
-Uma outra sugestão de melhoria do código, seria um retorno do id e da descrição do bug, para melhor ajudar no entendimento da resolução. 😄
+Outra sugestão de melhoria do código, seria um retorno do 'id' e da descrição do bug, para melhor ajudar no entendimento da resolução. 😄
 
 > Obs: Este repositório ficará privado após a avaliação do mesmo :D
